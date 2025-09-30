@@ -1,0 +1,75 @@
+# ------------------------------------
+# Project-Specific Exclusions (Based on the Image)
+# ------------------------------------
+
+# Ignore large datasets and data folders
+# Keeping the 'PlantVillage' folder in case it's a small subset or source code,
+# but ignoring large data directories.
+half_dataset/
+PlantVillage/
+split/
+
+# Ignore notebooks used for experimentation/testing
+sample.ipynb
+test_img.jpg
+
+# ------------------------------------
+# Model Exclusions
+# ------------------------------------
+
+# Ignore the 'models' directory to prevent uploading large trained models.
+# If you decide to track the models, comment out the line below.
+models/
+
+# Ignore checkpoint folders where training progress is saved
+checkpoints/
+
+# Ignore general Keras/TensorFlow model files (specific to your H5 files)
+*.h5
+*.keras
+
+# Ignore other common model/weights file extensions
+*.pth
+*.pt
+*.ckpt
+
+# ------------------------------------
+# Python and Environment Exclusions
+# ------------------------------------
+
+# Ignore Python cache and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Virtual Environments
+.env
+.venv
+
+# Ignore dependencies file (if generated dynamically, but usually kept)
+# requirements.txt  # UNCOMMENT THIS ONLY IF YOU DON'T WANT TO TRACK DEPENDENCIES
+
+# ------------------------------------
+# IDE and System Files
+# ------------------------------------
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings/user files
+.vscode/
+
+# Ignore macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# ------------------------------------
+# Logs and Archives
+# ------------------------------------
+logs/
+allfiles.txt
+*.zip
+*.tar.gz
+*.rar
+*.7z
